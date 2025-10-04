@@ -1,18 +1,28 @@
 const appName = "CodeVault";
 
+const displaySnippet = (snippetObject) => {
+  console.log("--- Snippet Details ---");
+  console.log(`ID: ${snippetObject.id}`);
+  console.log(`Title: ${snippetObject.title}`);
+  console.log(`Language: ${snippetObject.language}`);
+  console.log(`Code: \n${snippetObject.code}`);
+
+  console.log(`Tags: ${snippetObject.tags.join(", ")}`);
+  console.log("-----------------------");
+};
+
 const startApp = () => {
-  let currentUser = null;
-  const isOnline = true;
+  console.log(`Welcome to ${appName}`);
 
-  console.log(`Starting ${appName}...`);
+  const firstSnippet = {
+    id: 1,
+    title: "Simple Express Server",
+    language: "Javascript",
+    code: "const express = require('express');\nconst app = express();\n\napp.listen(3000, () => console.log('Server runiing));",
+    tags: ["node.js", "express", "server"],
+  };
 
-  if (isOnline) {
-    console.log("System is online. Ready to accept connections.");
-    currentUser = "Admin";
-    console.log(`Current user set to: ${currentUser}`);
-  } else {
-    console.log("System is offline");
-  }
+  displaySnippet(firstSnippet);
 };
 
 startApp();
