@@ -1,0 +1,24 @@
+{
+  "name": "codevault-backend",
+  "version": "1.0.0",
+  "description": "This is the backend for the CodeVault application, a tool for managing code snippets. Built with Node.js and Express.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smaitra006/codevault-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smaitra006/codevault-backend/issues"
+  },
+  "homepage": "https://github.com/smaitra006/codevault-backend#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
